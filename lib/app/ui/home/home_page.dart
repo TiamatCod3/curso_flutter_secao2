@@ -1,19 +1,25 @@
+import 'package:app_get_x/app/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controllers/home_controller.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home Page'), centerTitle: true),
+      appBar: AppBar(
+          title: const Text('Home Page'),
+          centerTitle: true,
+          actions:[IconButton(onPressed: controller.reloadData, icon: const Icon(Icons.refresh))]),
       body: GetBuilder<HomeController>(
-          init: HomeController(),
           builder: (_) {
-            return Center(child: ElevatedButton(onPressed: _.onPressed, child: const Text('Página detalhes')));
+            return Center(
+                child: controller.isLoading ? const CircularProgressIndicator() :
+                ElevatedButton(
+                    onPressed: _.onPressed,
+                    child: const Text('Página detalhes')));
           }),
     );
   }

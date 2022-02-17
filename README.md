@@ -30,3 +30,6 @@ samples, guidance on mobile development, and a full API reference.
   
 5. Criação da Details Home, Rota e Controller
 - details_page, details_controller
+
+6. Simple State Management
+- 
