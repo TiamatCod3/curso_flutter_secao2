@@ -1,11 +1,12 @@
+import 'package:app_get_x/app/routes/app_pages.dart';
 import 'package:flutter/material.dart'; 
 import 'package:get/get.dart'; 
 
 void main() {
   runApp(GetMaterialApp(       
     debugShowCheckedModeBanner: true,       
-    initialRoute: '/',            
+    initialRoute: Routes.HOME,            
     defaultTransition: Transition.fade,       
-    getPages: MyRoutes.routes,            
+    getPages: AppPages.pages,            
   ));       
 }
