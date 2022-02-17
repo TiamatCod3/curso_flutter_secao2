@@ -22,3 +22,11 @@ samples, guidance on mobile development, and a full API reference.
 2. Criação do main
 - Usar o comoando getma para usar o snippet de código de main padrão
 
+3. Criação das rotas
+- app_pages e app_routes
+
+4. Criação da UI e Home Page
+- home_controller e home_page
+  
+5. Criação da Details Home, Rota e Controller
+- details_page, details_controller
