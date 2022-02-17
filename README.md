@@ -14,3 +14,11 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+1. Instalação do GetX
+- Adicionar o GetX no arquivo pubspeck.yaml, abaixo do cupertino
+- Clicar em pub get
+
+2. Criação do main
+- Usar o comoando getma para usar o snippet de código de main padrão
+
